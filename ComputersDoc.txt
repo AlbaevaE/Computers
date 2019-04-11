@@ -17,4 +17,7 @@
 
  GET all - http://localhost:8080/api/v1/computers/
 
+ delete computer:
+
+ DELETE by id - http://localhost:8080/api/v1/computers/1
  

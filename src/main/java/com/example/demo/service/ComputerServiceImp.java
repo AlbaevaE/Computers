@@ -5,6 +5,7 @@ import com.example.demo.repository.ComputersRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class ComputerServiceImp implements ComputerService {
     private final ComputersRepository computerRepository;
@@ -26,5 +27,10 @@ public class ComputerServiceImp implements ComputerService {
     @Override
     public Computers saveComputer(Computers c) {
         return this.computerRepository.save(c);
+    }
+
+    @Override
+    public void deleteComputerById(Long id) {
+        this.computerRepository.deleteById(id);
     }
 }

@@ -10,4 +10,6 @@ public interface ComputerService {
     Computers findComputerById(Long id);
 
     Computers saveComputer(Computers c);
+
+    void deleteComputerById(Long id);
 }

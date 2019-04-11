@@ -33,4 +33,9 @@ public class ComputerController {
     public Computers saveComputers(@RequestBody Computers c) {
         return this.computerService.saveComputer(c);
     }
+
+    @DeleteMapping("/{id}")
+    public void deleteComputerById(@PathVariable Long id) {
+        this.computerService.deleteComputerById(id);
+    }
 }
